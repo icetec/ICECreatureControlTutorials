@@ -3,6 +3,7 @@ using System.Collections;
 using ICE;
 using ICE.Creatures;
 using ICE.Creatures.Objects;
+using ICE.Creatures.EnumTypes;
 
 namespace ICE.Creatures.Demo
 {

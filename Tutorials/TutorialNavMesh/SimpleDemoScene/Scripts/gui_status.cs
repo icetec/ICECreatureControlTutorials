@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+
 using ICE;
 using ICE.Creatures;
 using ICE.Creatures.Objects;
+using ICE.Creatures.EnumTypes;
 using ICE.Shared;
 using UnityEngine.UI;
 

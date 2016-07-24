@@ -2,7 +2,9 @@
 using System.Collections;
 using ICE;
 using ICE.Creatures;
+
 using ICE.Creatures.Objects;
+using ICE.Creatures.EnumTypes;
 using ICE.Shared;
 using UnityEngine.UI;
 
@@ -135,14 +137,14 @@ public class TargetDemo : MonoBehaviour {
 
 		if( UseNPC2AsTarget != null )
 		{
-			if( _controller_01.Creature.Essentials.Target.AccessType == ICE.Creatures.EnumTypes.TargetAccessType.OBJECT )
+			if( _controller_01.Creature.Essentials.Target.AccessType == TargetAccessType.OBJECT )
 			{
 				if( UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != NPC2 )
 					_controller_01.Creature.Essentials.Target.SetTargetByGameObject( NPC2 );
 				else if( ! UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != TargetObject )
 					_controller_01.Creature.Essentials.Target.SetTargetByGameObject( TargetObject );
 			}
-			else if( _controller_01.Creature.Essentials.Target.AccessType == ICE.Creatures.EnumTypes.TargetAccessType.NAME )
+			else if( _controller_01.Creature.Essentials.Target.AccessType == TargetAccessType.NAME )
 			{
 				if( UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != NPC2 )
 					_controller_01.Creature.Essentials.Target.SetTargetByName( NPC2.name, _controller_01.gameObject );
