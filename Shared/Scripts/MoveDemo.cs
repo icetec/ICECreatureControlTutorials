@@ -1,15 +1,16 @@
 using UnityEngine;
-using System.Collections;
-using ICE;
-using ICE.Creatures;
+using UnityEngine.UI;
 
+using System.Collections;
+
+using ICE;
+
+using ICE.Creatures;
 using ICE.Creatures.Objects;
 using ICE.Creatures.EnumTypes;
 using ICE.Shared;
-using UnityEngine.UI;
 
 public class MoveDemo : MonoBehaviour {
-
 
 	public Slider MoveSegmentLength;
 	public Slider MoveDeviationLength;
@@ -171,7 +172,7 @@ public class MoveDemo : MonoBehaviour {
 			if( _controller_01.Creature.Move.CurrentBehaviourModeRule != null ) 
 			{
 				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Velocity.Velocity.z = ForwardSpeed.value;
-				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Velocity.AngularVelocity = TurnSpeed.value;
+				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Velocity.Angular.y = TurnSpeed.value;
 			}
 
 			TextMoveSegmentLength.text = MoveSegmentLength.value.ToString();
