@@ -89,8 +89,8 @@ public class TargetDemo : MonoBehaviour {
 
 			if( _controller_01.Creature.Move.CurrentBehaviourModeRule != null ) 
 			{
-				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Velocity.Velocity.z = ForwardSpeed.value;
-				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Velocity.Angular.y = TurnSpeed.value;
+				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Motion.Velocity.z = ForwardSpeed.value;
+				_controller_01.Creature.Move.CurrentBehaviourModeRule.Move.Motion.AngularVelocity.y = TurnSpeed.value;
 			}
 
 			TextTargetRandomRange.text = TargetRandomRange.value.ToString();

@@ -29,7 +29,7 @@ public class CollectDemo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		InventoryCount1.text = _controller_01.Creature.Status.Inventory.Slots[0].Amount.ToString();
-		InventoryCount2.text = _controller_01.Creature.Status.Inventory.Slots[1].Amount.ToString();
+		InventoryCount1.text = _controller_01.Creature.Status.Inventory.SlotItemAmount( 0 ).ToString();
+		InventoryCount2.text = _controller_01.Creature.Status.Inventory.SlotItemAmount( 1 ).ToString();
 	}
 }

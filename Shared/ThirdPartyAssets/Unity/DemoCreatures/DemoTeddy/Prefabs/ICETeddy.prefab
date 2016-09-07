@@ -1214,6 +1214,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5513bb870e3a874db25a9f2df24e3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseDebug: 1
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 60
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
   Display:
     m_UseGlobal: 0
     m_ShowHelp: 0
@@ -1239,8 +1282,11 @@ MonoBehaviour:
     m_ShowBehaviourEffect: 1
     m_ShowBehaviourLink: 1
     m_ShowBeta: 0
-    m_DisplayOptions: 3
     m_FoldoutEssentials: 1
+    m_FoldoutEssentialsHome: 1
+    m_FoldoutEssentialsBehaviours: 1
+    m_FoldoutEssentialsMotion: 1
+    m_FoldoutEssentialsSystem: 1
     m_FoldoutWizard: 1
     m_FoldoutBehaviours: 1
     m_FoldoutMissions: 0
@@ -1262,32 +1308,50 @@ MonoBehaviour:
     m_FoldoutStatusDynamicInfluences: 1
     m_FoldoutInventory: 1
   m_Creature:
-    LastGroupCommand: 
-    DontDestroyOnLoad: 0
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
     UseCoroutine: 1
     UseApplicationFocus: 0
     IsPaused: 0
     m_Interaction:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       m_Interactors: []
       UseAutoInteractorDetection: 0
-    m_Characteristics:
+    m_Essentials:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       DefaultRunningSpeed: 7
       DefaultWalkingSpeed: 3
       DefaultTurningSpeed: 4
       IgnoreAnimationRun: 0
       AnimationRun:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidRun
-          Index: 1
-          Length: 0.59333324
-          DefaultWrapMode: 2
+          Name: 
+          Index: 0
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1299,24 +1363,31 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationWalk: 0
       AnimationWalk:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidWalk
-          Index: 2
-          Length: 0.9899998
-          DefaultWrapMode: 2
+          Name: 
+          Index: 0
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1328,24 +1399,31 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationIdle: 0
       AnimationIdle:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidIdle
+          Name: 
           Index: 0
-          Length: 2.4000006
-          DefaultWrapMode: 2
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1357,12 +1435,19 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationJump: 1
       AnimationJump:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
         InterfaceType: 0
         Animator:
@@ -1386,12 +1471,55 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
+      IgnoreAnimationFall: 1
+      AnimationFall:
+        Enabled: 0
+        Foldout: 0
+        AllowInterfaceSelector: 0
+        InterfaceType: 0
+        Animator:
+          m_Parameters: []
+          StateName: 
+          Name: 
+          Index: 0
+          Length: 0
+          DefaultWrapMode: 0
+          AutoSpeed: 0
+          Speed: 0
+          TransitionDuration: 0
+          Type: 0
+          ApplyRootMotion: 0
+        Animation:
+          Name: 
+          Index: 0
+          Length: 0
+          wrapMode: 0
+          DefaultSpeed: 0
+          DefaultWrapMode: 0
+          Speed: 0
+          AutoSpeed: 0
+          AutoTransitionDuration: 0
+          TransitionDuration: 0
+        Clip:
+          Clip: {fileID: 0}
+          TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationCrawlMove: 1
       AnimationCrawlMove:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
         InterfaceType: 0
         Animator:
@@ -1415,12 +1543,19 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationCrawlIdle: 1
       AnimationCrawlIdle:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
         InterfaceType: 0
         Animator:
@@ -1444,12 +1579,19 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationCrouchMove: 1
       AnimationCrouchMove:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
         InterfaceType: 0
         Animator:
@@ -1473,12 +1615,19 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationCrouchIdle: 1
       AnimationCrouchIdle:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
         InterfaceType: 0
         Animator:
@@ -1502,24 +1651,31 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
-      IgnoreAnimationDead: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
+      IgnoreAnimationDead: 1
       AnimationDead:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidCrouchIdle
-          Index: 3
-          Length: 1.833334
-          DefaultWrapMode: 2
+          Name: 
+          Index: 0
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1531,24 +1687,31 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationAttack: 1
       AnimationAttack:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidIdle
+          Name: 
           Index: 0
-          Length: 2.4000006
-          DefaultWrapMode: 2
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1560,24 +1723,31 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       IgnoreAnimationImpact: 1
       AnimationImpact:
+        Enabled: 0
+        Foldout: 0
         AllowInterfaceSelector: 0
-        InterfaceType: 1
+        InterfaceType: 0
         Animator:
           m_Parameters: []
           StateName: 
-          Name: HumanoidIdle
+          Name: 
           Index: 0
-          Length: 2.4000006
-          DefaultWrapMode: 2
+          Length: 0
+          DefaultWrapMode: 0
           AutoSpeed: 0
-          Speed: 1
-          TransitionDuration: 0.5
+          Speed: 0
+          TransitionDuration: 0
           Type: 0
           ApplyRootMotion: 0
         Animation:
@@ -1589,66 +1759,46 @@ MonoBehaviour:
           DefaultWrapMode: 0
           Speed: 0
           AutoSpeed: 0
+          AutoTransitionDuration: 0
           TransitionDuration: 0
         Clip:
           Clip: {fileID: 0}
           TransitionDuration: 0
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          m_Events: []
       MotionControl: 0
       GroundOrientation: 1
       TrophicLevel: 0
       IsCannibal: 0
       UseAutoDetectInteractors: 0
-      m_GroundLayers: []
-    m_Essentials:
       m_Target:
-        AccessType: 0
-        m_TargetTag: Untagged
-        m_TargetName: WP1
-        m_TargetGameObject: {fileID: 0}
-        Influences:
-          Foldout: 1
-          Enabled: 0
-          Interval: 0
-          Damage: 0
-          Stress: 0
-          Debility: 0
-          Hunger: 0
-          Thirst: 0
-          Aggressivity: 0
-          Anxiety: 0
-          Experience: 0
-          Nosiness: 0
-          Odour:
-            Enabled: 0
-            Type: 0
-            Intensity: 0
-            IntensityMax: 0
-            Range: 0
-            RangeMax: 0
-            UseMarker: 0
-            UseEffect: 0
-        m_Type: 0
-        ShowInfoText: 0
+        Enabled: 0
+        Foldout: 1
         InfoText: 
+        ShowInfoText: 0
+        m_EntityGameObject: {fileID: 0}
+        m_EntityComponent: {fileID: 0}
         BehaviourModeKey: 
+        m_Events:
+          Enabled: 0
+          Foldout: 0
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          m_Events: []
         m_GroupMessage:
+          Enabled: 0
+          Foldout: 0
           Type: 0
           TargetGameObject: {fileID: 0}
           BahaviourKey: 
           Command: 
-          Foldout: 0
-          Enabled: 0
-        LastReceivedGroupMessage:
-          Type: 0
-          TargetGameObject: {fileID: 0}
-          BahaviourKey: 
-          Command: 
-          Foldout: 0
-          Enabled: 0
-        IsPrefab: 0
         m_Selectors:
+          Enabled: 0
           Foldout: 1
-          UseSelectionCriteriaForHome: 0
           UseSelectionRange: 1
           UseSelectionAngle: 0
           UseVisibilityCheck: 0
@@ -1673,7 +1823,7 @@ MonoBehaviour:
           AdvancedOperatorType: 0
           Status: 0
           m_SelectorGroups: []
-          m_Statements: []
+          m_ConditionGroups: []
         m_Move:
           Enabled: 1
           Foldout: 1
@@ -1681,7 +1831,7 @@ MonoBehaviour:
           Offset: {x: 0, y: 0, z: 22}
           LastKnownPosition: {x: 0, y: 0, z: 0}
           RandomRange: 0
-          MaxRandomRange: 250
+          RandomRangeMaximum: 250
           StopDistance: 2
           StopDistanceMaximum: 10
           StopDistanceZoneRestricted: 0
@@ -1702,7 +1852,44 @@ MonoBehaviour:
           MinOffsetDistance: 50
           MaxOffsetDistance: 70
           DynamicOffsetDistanceUpdateSpeed: 0.049999997
-        Foldout: 1
+        m_Behaviour:
+          Foldout: 0
+          UseAdvancedBehaviour: 0
+          UseSelectiveBehaviour: 0
+          BehaviourModeKey: 
+          BehaviourModeKeyReached: 
+        m_Influences:
+          Enabled: 0
+          Foldout: 0
+          Interval: 0
+          Damage: 0
+          UseDamageInPercent: 0
+          Stress: 0
+          UseStressInPercent: 0
+          Debility: 0
+          UseDebilityInPercent: 0
+          Hunger: 0
+          UseHungerInPercent: 0
+          Thirst: 0
+          UseThirstInPercent: 0
+          Aggressivity: 0
+          Anxiety: 0
+          Experience: 0
+          Nosiness: 0
+          Odour:
+            Enabled: 0
+            Type: 0
+            Intensity: 0
+            IntensityMax: 0
+            Range: 0
+            RangeMax: 0
+            UseMarker: 0
+            UseEffect: 0
+        AccessType: 0
+        m_TargetTag: Untagged
+        m_TargetName: WP1
+        m_Type: 0
+        m_IsPrefab: 0
         TargetMoveComplete: 0
         OffsetDistanceMax: 100
       BehaviourModeRun: RUN
@@ -1710,34 +1897,54 @@ MonoBehaviour:
       BehaviourModeWalk: WALK
       BehaviourModeSpawn: IDLE
       BehaviourModeJump: JUMP
+      BehaviourModeFall: 
       BehaviourModeDead: IDLE
     m_Status:
-      Integrity: 100
-      MaxIntegrity: 100
-      MaxIntegrityMaximum: 100
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      LifespanMin: 0
+      LifespanMax: 0
+      LifespanDefaultMax: 360
       UseAging: 0
       MaxAge: 3600
       MaxAgeMaximum: 60
-      PerceptionTime: 0.5
-      DefaultPerceptionTime: 0.5
-      PerceptionTimeVariance: 0.25
-      AutoPerceptionTime: 1
-      PerceptionTimeFitnessMultiplier: 0
+      UseLifespan: 0
+      m_Corpse:
+        Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        CorpseReferencePrefab: {fileID: 0}
+        CorpseRemovingDelay: 20
+        CorpseRemovingDelayMaximum: 20
+        CorpseRemovingDelayVariance: 0.25
+        UseCorpseScaling: 0
+      IsDestructible: 1
+      InitialDurabilityMin: 100
+      InitialDurabilityMax: 100
+      InitialDurabilityMaximum: 100
       ReactionTime: 0.5
       DefaultReactionTime: 0.5
       ReactionTimeVariance: 0.25
       AutoReactionTime: 1
       ReactionTimeFitnessMultiplier: 0
       RecoveryPhase: 0
-      RecoveryPhasePeriodMax: 30
-      RespawnDelayMax: 300
-      RespawnDelay: 20
-      RespawnDelayVariance: 0.25
-      UseCorpse: 1
-      CorpseReferencePrefab: {fileID: 182124, guid: 2138d3174e242e948b2d92f8398d12fc,
-        type: 2}
+      RecoveryPhaseMin: 0
+      RecoveryPhaseMax: 0
+      RecoveryPhaseMaximum: 30
+      RemovingDelay: 0
+      RemovingDelayMin: 20
+      RemovingDelayMax: 20
+      RemovingDelayMaximum: 300
       FitnessRecreationLimit: 0
       TrophicLevel: 1
+      GenderType: 0
       IsCannibal: 0
       UseDynamicInitialisation: 0
       UseAdvanced: 1
@@ -1773,7 +1980,7 @@ MonoBehaviour:
       DefaultAggressivity: 25
       AggressivityHealthMultiplier: 0
       AggressivityStaminaMultiplier: 0
-      AggressivityPowerMultiplier: 0.01
+      AggressivityPowerMultiplier: 0
       AggressivityDamageMultiplier: 0
       AggressivityStressMultiplier: 0
       AggressivityDebilityMultiplier: 0
@@ -1785,7 +1992,7 @@ MonoBehaviour:
       DefaultAnxiety: 0
       AnxietyHealthMultiplier: 0
       AnxietyStaminaMultiplier: 0
-      AnxietyPowerMultiplier: 0.01
+      AnxietyPowerMultiplier: 0
       AnxietyDamageMultiplier: 0
       AnxietyStressMultiplier: 0
       AnxietyDebilityMultiplier: 0
@@ -1797,7 +2004,7 @@ MonoBehaviour:
       DefaultExperience: 0
       ExperienceHealthMultiplier: 0
       ExperienceStaminaMultiplier: 0
-      ExperiencePowerMultiplier: 0.01
+      ExperiencePowerMultiplier: 0
       ExperienceDamageMultiplier: 0
       ExperienceStressMultiplier: 0
       ExperienceDebilityMultiplier: 0
@@ -1809,7 +2016,7 @@ MonoBehaviour:
       DefaultNosiness: 0
       NosinessHealthMultiplier: 0
       NosinessStaminaMultiplier: 0
-      NosinessPowerMultiplier: 0.01
+      NosinessPowerMultiplier: 0
       NosinessDamageMultiplier: 0
       NosinessStressMultiplier: 0
       NosinessDebilityMultiplier: 0
@@ -1817,7 +2024,6 @@ MonoBehaviour:
       NosinessThirstMultiplier: 0
       NosinessTemperaturMultiplier: 0
       NosinessAgeMultiplier: 0
-      DefaultHealth: 100
       HealthDamageMultiplier: 1
       HealthStressMultiplier: 0
       HealthDebilityMultiplier: 0
@@ -1826,7 +2032,6 @@ MonoBehaviour:
       HealthRecreationMultiplier: 0.2
       HealthTemperaturMultiplier: 0
       HealthAgeMultiplier: 0
-      DefaultPower: 100
       PowerHealthMultiplier: 0
       PowerDamageMultiplier: 0
       PowerStaminaMultiplier: 0
@@ -1836,7 +2041,6 @@ MonoBehaviour:
       PowerThirstMultiplier: 0
       PowerTemperaturMultiplier: 0
       PowerAgeMultiplier: 0
-      DefaultStamina: 100
       StaminaHealthMultiplier: 0
       StaminaDamageMultiplier: 0
       StaminaStressMultiplier: 0
@@ -1846,7 +2050,30 @@ MonoBehaviour:
       StaminaTemperaturMultiplier: 0
       StaminaAgeMultiplier: 0
       FitnessSpeedMultiplier: 0
+      m_Sensoria:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        FieldOfView: 80
+        VisualRange: 0
+        MaxVisualRange: 100
+        UseDynamicVisualSensorPosition: 0
+        VisualSensorName: 
+        VisualSensorOffset: 0.15
+        m_VisualSensorPosition: {x: 0, y: 1.6, z: 0.15}
+      m_Temperatur:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
       m_Odour:
+        Enabled: 0
+        Foldout: 0
         Type: 0
         Intensity: 50
         IntensityMax: 100
@@ -1862,35 +2089,58 @@ MonoBehaviour:
       m_Inventory:
         Enabled: 0
         Foldout: 0
-        Slots: []
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        m_Slots: []
         MaxSlots: 9
         IgnoreInventoryOwner: 0
         DefaultDropRange: 0.5
         LastCollectedObjectID: 0
+        UseDetachOnDie: 0
       m_Memory:
+        Enabled: 0
+        Foldout: 0
         SpatialMemory:
+          Enabled: 0
+          Foldout: 0
           CapacityMax: 100
           Capacity: 100
         LongTermMemory:
+          Enabled: 0
+          Foldout: 0
           CapacityMax: 100
           Capacity: 100
         ShortTermMemory:
+          Enabled: 0
+          Foldout: 0
           CapacityMax: 100
           Capacity: 100
       IsReactionForced: 0
     m_Behaviour:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       m_BehaviourModes:
-      - Key: IDLE
+      - Enabled: 0
         Foldout: 1
-        ShowInfoText: 0
         InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: IDLE
         RulesOrderType: 0
         RulesOrderInverse: 0
-        Favoured:
+        m_Favoured:
           Enabled: 0
+          Foldout: 0
           MinRuntime: 0
           MaxRuntime: 0
-          MaximumRuntime: 0
+          MaxRuntimeMaximum: 60
           FavouredPriority: 0
           FavouredUntilNextMovePositionReached: 0
           FavouredUntilTargetMovePositionReached: 0
@@ -1899,73 +2149,76 @@ MonoBehaviour:
           FavouredTargetName: 
           FavouredTargetRange: 0
         m_Rules:
-        - Key: 
-          Enabled: 1
+        - Enabled: 1
           Foldout: 1
-          UseFootsteps: 0
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
           UseCustomLength: 1
           LengthMin: 0
           LengthMax: 0
           LengthMaximum: 20
-          Body:
-            Type: 0
-            UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
-            Width: 0
-            Length: 0
-            Height: 0
-            WidthOffset: 0
-            LengthOffset: 0
-            HeightOffset: 0
-            DefaultWidth: 0
-            DefaultLength: 0
-            DefaultHeight: 0
-          Move:
+          Index: 0
+          m_Influences:
             Enabled: 0
-            Type: 0
-            Detour:
-              Position: {x: 0, y: 0, z: 0}
-            Orbit:
-              Radius: 0
-              RadiusShift: 0
-              MaxDistance: 0
-              MinDistance: 0
-            Escape:
-              EscapeDistance: 0
-              RandomEscapeAngle: 0
-            Avoid:
-              AvoidDistance: 0
-            Velocity:
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
               Type: 0
-              Velocity: {x: 0, y: 0, z: 0}
-              VelocityMax: {x: 0, y: 0, z: 0}
-              UseNegativeVelocity: 0
-              VelocityMinVariance: 0
-              VelocityMaxVariance: 0
-              UseTargetVelocity: 0
-              AngularVelocity: 0
-              AngularVelocityAuto: 0
-              Inertia: 0
-              UseAutoDrift: 0
-              DriftMultiplier: 0
-              VelocityMultiplier: 0
-              VelocityMultiplierUpdateTimer: 0
-              VelocityMultiplierUpdateInterval: 0
-            ViewingDirection: 0
-            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
-            MoveStopDistance: 0
-            MoveSegmentLength: 0
-            MaxMoveSegmentLength: 0
-            MoveSegmentVariance: 0
-            MoveDeviationLength: 0
-            MoveDeviationLengthMax: 0
-            MoveDeviationVariance: 0
-            MoveIgnoreLevelDifference: 0
-            Link: 0
-            NextBehaviourModeKey: 
-          Animation:
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -1989,113 +2242,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidIdle
+              Name: HumanoidIdle
+              Index: 33
+              Length: 2.4000006
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: WALK
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -2105,9 +2304,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 1
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -2122,14 +2353,19 @@ MonoBehaviour:
               AvoidDistance: 0
             Velocity:
               Type: 0
-              Velocity: {x: 0, y: 0, z: 1.1999999}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 4
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
@@ -2146,9 +2382,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: WALK
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -2172,113 +2754,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidWalk
+              Name: HumanoidWalk
+              Index: 8
+              Length: 0.9899998
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: RUN
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -2288,9 +2816,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 1
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -2305,14 +2865,19 @@ MonoBehaviour:
               AvoidDistance: 0
             Velocity:
               Type: 0
-              Velocity: {x: 0, y: 0, z: 4}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              Velocity: {x: 0, y: 0, z: 1.1999999}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 4
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
@@ -2329,9 +2894,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 1.1999999}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: RUN
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -2355,113 +3266,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidRunForwardWeapon
+              Name: HumanoidRunForwardWeapon
+              Index: 3
+              Length: 0.6666667
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: JUMP
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -2471,9 +3328,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 0
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -2488,14 +3377,19 @@ MonoBehaviour:
               AvoidDistance: 0
             Velocity:
               Type: 0
-              Velocity: {x: 0, y: 0, z: 0}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              Velocity: {x: 0, y: 0, z: 4}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 0
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
@@ -2512,9 +3406,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 4}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: JUMP
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -2538,113 +3778,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidDive
+              Name: HumanoidDive
+              Index: 23
+              Length: 2.4
+              DefaultWrapMode: 0
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: SEARCH_AND_HUNT
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -2654,9 +3840,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 1
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -2671,14 +3889,19 @@ MonoBehaviour:
               AvoidDistance: 0
             Velocity:
               Type: 0
-              Velocity: {x: 0, y: 0, z: 4}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 4
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
@@ -2695,9 +3918,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: SEARCH_AND_HUNT
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -2721,113 +4290,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidRun
+              Name: HumanoidRun
+              Index: 17
+              Length: 0.59333324
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: ATTACK
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -2837,9 +4352,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 1
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -2854,21 +4401,26 @@ MonoBehaviour:
               AvoidDistance: 0
             Velocity:
               Type: 0
-              Velocity: {x: 0, y: 0, z: 0}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              Velocity: {x: 0, y: 0, z: 4}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 5
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
               VelocityMultiplier: 0
               VelocityMultiplierUpdateTimer: 0
               VelocityMultiplierUpdateInterval: 0
-            ViewingDirection: 3
+            ViewingDirection: 0
             ViewingDirectionPosition: {x: 0, y: 0, z: 0}
             MoveStopDistance: 0
             MoveSegmentLength: 0
@@ -2878,9 +4430,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 4}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 4, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: ATTACK
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -2904,113 +4802,59 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
-            Enabled: 0
-            UseInvisibility: 0
-            InvisibilityType: 0
-          Audio:
-            Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
-            Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
-            ImpulseIntervalMin: 0
-            ImpulseIntervalMax: 0
-            ImpulseIntervalMaximum: 5
-            ImpulseSequenceLimitMin: 0
-            ImpulseSequenceLimitMax: 0
-            ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
+            m_Events:
               Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
+            Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidBattleCry
+              Name: HumanoidBattleCry
+              Index: 44
+              Length: 2.8333335
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
               Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
-            Enabled: 0
-            ReferenceObject: {fileID: 0}
-            Offset: {x: 0, y: 0, z: 0}
-            Rotation: {x: 0, y: 0, z: 0, w: 0}
-            OffsetType: 0
-            OffsetRadius: 0
-            Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
-            Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
-          Inventory:
-            Enabled: 0
-            m_ActionList: []
-      - Key: WAIT_FOR_PLAYER
-        Foldout: 1
-        ShowInfoText: 0
-        InfoText: 
-        RulesOrderType: 0
-        RulesOrderInverse: 0
-        Favoured:
-          Enabled: 0
-          MinRuntime: 0
-          MaxRuntime: 0
-          MaximumRuntime: 0
-          FavouredPriority: 0
-          FavouredUntilNextMovePositionReached: 0
-          FavouredUntilTargetMovePositionReached: 0
-          FavouredUntilDetourPositionReached: 0
-          FavouredTarget: 0
-          FavouredTargetName: 
-          FavouredTargetRange: 0
-        m_Rules:
-        - Key: 
-          Enabled: 1
-          Foldout: 1
-          UseFootsteps: 0
-          UseCustomLength: 1
-          LengthMin: 0
-          LengthMax: 0
-          LengthMaximum: 20
-          Body:
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
             Type: 0
             UseAdvanced: 0
-            UseLeaningTurn: 0
-            MaxLeanAngle: 0
-            LeanAngleMultiplier: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
             Width: 0
             Length: 0
             Height: 0
@@ -3020,9 +4864,41 @@ MonoBehaviour:
             DefaultWidth: 0
             DefaultLength: 0
             DefaultHeight: 0
-          Move:
-            Enabled: 0
+          Body:
             Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
             Detour:
               Position: {x: 0, y: 0, z: 0}
             Orbit:
@@ -3038,20 +4914,25 @@ MonoBehaviour:
             Velocity:
               Type: 0
               Velocity: {x: 0, y: 0, z: 0}
-              VelocityMax: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 5, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
               UseNegativeVelocity: 0
               VelocityMinVariance: 0
               VelocityMaxVariance: 0
               UseTargetVelocity: 0
-              AngularVelocity: 0
-              AngularVelocityAuto: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
               Inertia: 0
               UseAutoDrift: 0
               DriftMultiplier: 0
               VelocityMultiplier: 0
               VelocityMultiplierUpdateTimer: 0
               VelocityMultiplierUpdateInterval: 0
-            ViewingDirection: 0
+            ViewingDirection: 3
             ViewingDirectionPosition: {x: 0, y: 0, z: 0}
             MoveStopDistance: 0
             MoveSegmentLength: 0
@@ -3061,9 +4942,355 @@ MonoBehaviour:
             MoveDeviationLengthMax: 0
             MoveDeviationVariance: 0
             MoveIgnoreLevelDifference: 0
-            Link: 0
             NextBehaviourModeKey: 
-          Animation:
+          Move:
+            Enabled: 1
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 5, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 3
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          Look:
+            Enabled: 0
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+          Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
+      - Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        Key: WAIT_FOR_PLAYER
+        RulesOrderType: 0
+        RulesOrderInverse: 0
+        m_Favoured:
+          Enabled: 0
+          Foldout: 0
+          MinRuntime: 0
+          MaxRuntime: 0
+          MaxRuntimeMaximum: 60
+          FavouredPriority: 0
+          FavouredUntilNextMovePositionReached: 0
+          FavouredUntilTargetMovePositionReached: 0
+          FavouredUntilDetourPositionReached: 0
+          FavouredTarget: 0
+          FavouredTargetName: 
+          FavouredTargetRange: 0
+        m_Rules:
+        - Enabled: 1
+          Foldout: 1
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          Key: 
+          FoldoutCustomLength: 1
+          UseCustomLength: 1
+          LengthMin: 0
+          LengthMax: 0
+          LengthMaximum: 20
+          Index: 0
+          m_Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          Influences:
+            Enabled: 0
+            Foldout: 1
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          m_Animation:
+            Enabled: 0
+            Foldout: 0
             AllowInterfaceSelector: 0
             InterfaceType: 1
             Animator:
@@ -3087,131 +5314,442 @@ MonoBehaviour:
               DefaultWrapMode: 0
               Speed: 0
               AutoSpeed: 0
+              AutoTransitionDuration: 0
               TransitionDuration: 0
             Clip:
               Clip: {fileID: 0}
               TransitionDuration: 0
-          Look:
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          Animation:
             Enabled: 0
+            Foldout: 0
+            AllowInterfaceSelector: 0
+            InterfaceType: 1
+            Animator:
+              m_Parameters: []
+              StateName: HumanoidIdle1
+              Name: HumanoidIdle1
+              Index: 0
+              Length: 3.6000001
+              DefaultWrapMode: 2
+              AutoSpeed: 0
+              Speed: 1
+              TransitionDuration: 0.5
+              Type: 0
+              ApplyRootMotion: 0
+            Animation:
+              Name: 
+              Index: 0
+              Length: 0
+              wrapMode: 0
+              DefaultSpeed: 0
+              DefaultWrapMode: 0
+              Speed: 0
+              AutoSpeed: 0
+              AutoTransitionDuration: 0
+              TransitionDuration: 0
+            Clip:
+              Clip: {fileID: 0}
+              TransitionDuration: 0
+            m_Events:
+              Enabled: 0
+              Foldout: 0
+              m_Events: []
+          m_Body:
+            Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          Body:
+            Type: 0
+            UseAdvanced: 0
+            UseRollAngle: 0
+            MaxRollAngle: 30
+            RollAngleMultiplier: 0.5
+            UsePitch: 0
+            MaxPitchAngle: 30
+            PitchAngleMultiplier: 0.5
+            Width: 0
+            Length: 0
+            Height: 0
+            WidthOffset: 0
+            LengthOffset: 0
+            HeightOffset: 0
+            DefaultWidth: 0
+            DefaultLength: 0
+            DefaultHeight: 0
+          m_Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          Move:
+            Enabled: 0
+            Foldout: 0
+            Type: 0
+            m_Altitude:
+              Enabled: 0
+              Foldout: 0
+              UseAltitudeAboveGround: 0
+              Min: 0
+              Max: 0
+              Maximum: 1000
+              VerticalSpeed:
+                serializedVersion: 2
+                m_Curve: []
+                m_PreInfinity: 2
+                m_PostInfinity: 2
+                m_RotationOrder: 4
+            Detour:
+              Position: {x: 0, y: 0, z: 0}
+            Orbit:
+              Radius: 0
+              RadiusShift: 0
+              MaxDistance: 0
+              MinDistance: 0
+            Escape:
+              EscapeDistance: 0
+              RandomEscapeAngle: 0
+            Avoid:
+              AvoidDistance: 0
+            Velocity:
+              Type: 0
+              Velocity: {x: 0, y: 0, z: 0}
+              VelocityMaximum: {x: 0, y: 0, z: 0}
+              AngularVelocity: 0
+              AngularVelocityMaximum: 0
+              AngularVelocityAuto: 0
+              Angular: {x: 0, y: 0, z: 0}
+              AngularMaximum: {x: 0, y: 0, z: 0}
+              UseNegativeVelocity: 0
+              VelocityMinVariance: 0
+              VelocityMaxVariance: 0
+              UseTargetVelocity: 0
+              UseAdvancedVelocity: 0
+              UseAdvancedAngularVelocity: 0
+              Inertia: 0
+              UseAutoDrift: 0
+              DriftMultiplier: 0
+              VelocityMultiplier: 0
+              VelocityMultiplierUpdateTimer: 0
+              VelocityMultiplierUpdateInterval: 0
+            ViewingDirection: 0
+            ViewingDirectionPosition: {x: 0, y: 0, z: 0}
+            MoveStopDistance: 0
+            MoveSegmentLength: 0
+            MaxMoveSegmentLength: 0
+            MoveSegmentVariance: 0
+            MoveDeviationLength: 0
+            MoveDeviationLengthMax: 0
+            MoveDeviationVariance: 0
+            MoveIgnoreLevelDifference: 0
+            NextBehaviourModeKey: 
+          m_Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          Link:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            Type: 0
+            BehaviourModeKey: 
+            RuleIndex: 0
+          m_Look:
+            Enabled: 0
+            Foldout: 0
             UseInvisibility: 0
             InvisibilityType: 0
-          Audio:
+          Look:
             Enabled: 0
-            m_Clips: []
-            Volume: 0.5
-            MinPitch: 1
-            MaxPitch: 1.5
-            MinDistance: 2
-            MaxDistance: 7
-            Loop: 0
-            RolloffMode: 0
-          Message:
+            Foldout: 0
+            UseInvisibility: 0
+            InvisibilityType: 0
+          m_Audio:
             Enabled: 0
-            MethodType: 0
-            CustomMethodName: 
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
             ImpulseIntervalMin: 0
             ImpulseIntervalMax: 0
             ImpulseIntervalMaximum: 5
             ImpulseSequenceLimitMin: 0
             ImpulseSequenceLimitMax: 0
             ImpulseSequenceLimitMaximum: 10
-            ImpulseBreakLengthMin: 0
-            ImpulseBreakLengthMax: 0
-            ImpulseBreakLengthMaximum: 10
-          Influences:
-            Foldout: 1
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          Audio:
             Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          Effect:
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            m_Clips: []
+            Volume: 0.5
+            MinPitch: 1
+            MaxPitch: 1.5
+            PitchMaximum: 10
+            MinDistance: 2
+            MaxDistance: 7
+            DistanceMaximum: 7
+            Loop: 0
+            Break: 0
+            RolloffMode: 0
+            MixerGroup: {fileID: 0}
+          m_Events:
             Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
+          m_Effect:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
             ReferenceObject: {fileID: 0}
             Offset: {x: 0, y: 0, z: 0}
             Rotation: {x: 0, y: 0, z: 0, w: 0}
             OffsetType: 0
             OffsetRadius: 0
+            OffsetRadiusMaximum: 15
             Detach: 0
-            IntervalMin: 0
-            IntervalMax: 0
-            MaxInterval: 0
-            ParentName: 
-            CurrentEffect: {fileID: 0}
-          Links:
+            MountPointName: 
+          Effect:
             Enabled: 0
-            Link: 0
-            BehaviourModeKey: 
-            RuleIndex: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_TimerEnabled: 1
+            TimerFoldout: 0
+            UseInterval: 0
+            UseEnd: 0
+            InitialImpulsTime: 0
+            InitialImpulsTimeMaximum: 60
+            ImpulseLimitMin: 0
+            ImpulseLimitMax: 0
+            ImpulseLimitMaximum: 5
+            ImpulseIntervalMin: 0
+            ImpulseIntervalMax: 0
+            ImpulseIntervalMaximum: 5
+            ImpulseSequenceLimitMin: 0
+            ImpulseSequenceLimitMax: 0
+            ImpulseSequenceLimitMaximum: 10
+            ImpulseSequenceBreakLengthMin: 0
+            ImpulseSequenceBreakLengthMax: 0
+            ImpulseSequenceBreakLengthMaximum: 10
+            ReferenceObject: {fileID: 0}
+            Offset: {x: 0, y: 0, z: 0}
+            Rotation: {x: 0, y: 0, z: 0, w: 0}
+            OffsetType: 0
+            OffsetRadius: 0
+            OffsetRadiusMaximum: 15
+            Detach: 0
+            MountPointName: 
+          m_Inventory:
+            Enabled: 0
+            Foldout: 0
+            m_ActionList: []
           Inventory:
             Enabled: 0
+            Foldout: 0
             m_ActionList: []
     m_Missions:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       m_Outpost:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         m_Target:
-          AccessType: 1
-          m_TargetTag: 
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
-            Foldout: 0
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          m_Type: 2
-          ShowInfoText: 0
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3236,7 +5774,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3244,7 +5782,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 10
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3265,28 +5803,26 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
-          TargetMoveComplete: 0
-          OffsetDistanceMax: 100
-        Enabled: 0
-        BehaviourModeTravel: TRAVEL
-        BehaviourModeLeisure: LEISURE
-        BehaviourModeRendezvous: RENDEZVOUS
-      m_Escort:
-        m_Target:
-          AccessType: 0
-          m_TargetTag: Untagged
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
+          m_Behaviour:
             Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
             Enabled: 0
+            Foldout: 0
             Interval: 0
             Damage: 0
+            UseDamageInPercent: 0
             Stress: 0
+            UseStressInPercent: 0
             Debility: 0
+            UseDebilityInPercent: 0
             Hunger: 0
+            UseHungerInPercent: 0
             Thirst: 0
+            UseThirstInPercent: 0
             Aggressivity: 0
             Anxiety: 0
             Experience: 0
@@ -3300,28 +5836,49 @@ MonoBehaviour:
               RangeMax: 0
               UseMarker: 0
               UseEffect: 0
-          m_Type: 3
-          ShowInfoText: 0
+          AccessType: 1
+          m_TargetTag: 
+          m_TargetName: 
+          m_Type: 2
+          m_IsPrefab: 0
+          TargetMoveComplete: 0
+          OffsetDistanceMax: 100
+        BehaviourModeTravel: TRAVEL
+        BehaviourModeLeisure: LEISURE
+        BehaviourModeRendezvous: RENDEZVOUS
+      m_Escort:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        m_Target:
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3346,7 +5903,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3354,7 +5911,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 0
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3375,10 +5932,46 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
+          m_Behaviour:
+            Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
+            Enabled: 0
+            Foldout: 0
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          AccessType: 0
+          m_TargetTag: Untagged
+          m_TargetName: 
+          m_Type: 3
+          m_IsPrefab: 0
           TargetMoveComplete: 0
           OffsetDistanceMax: 100
-        Enabled: 0
         DelayEscort: 0
         DelayFollow: 0
         DelayStandby: 1
@@ -3389,55 +5982,38 @@ MonoBehaviour:
         BehaviourModeStandby: ' '
         BehaviourModeIdle: ' '
       m_Patrol:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         m_Target:
-          AccessType: 0
-          m_TargetTag: 
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
-            Foldout: 0
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          m_Type: 5
-          ShowInfoText: 0
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3462,7 +6038,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3470,7 +6046,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 0
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3491,10 +6067,46 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
+          m_Behaviour:
+            Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
+            Enabled: 0
+            Foldout: 0
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          AccessType: 0
+          m_TargetTag: 
+          m_TargetName: 
+          m_Type: 5
+          m_IsPrefab: 0
           TargetMoveComplete: 0
           OffsetDistanceMax: 100
-        Enabled: 0
         m_Waypoints:
           Foldout: 1
           m_WaypointGroup: {fileID: 0}
@@ -3509,55 +6121,38 @@ MonoBehaviour:
         BehaviourModeLeisure: ' '
         BehaviourModeRendezvous: ' '
       m_Scout:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         m_Target:
-          AccessType: 0
-          m_TargetTag: 
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
-            Foldout: 0
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          m_Type: 0
-          ShowInfoText: 0
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3582,7 +6177,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3590,7 +6185,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 0
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3611,60 +6206,79 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
+          m_Behaviour:
+            Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
+            Enabled: 0
+            Foldout: 0
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          AccessType: 0
+          m_TargetTag: 
+          m_TargetName: 
+          m_Type: 0
+          m_IsPrefab: 0
           TargetMoveComplete: 0
           OffsetDistanceMax: 100
-        Enabled: 0
       m_Formation:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         m_Target:
-          AccessType: 0
-          m_TargetTag: 
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
-            Foldout: 0
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          m_Type: 0
-          ShowInfoText: 0
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3689,7 +6303,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3697,7 +6311,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 0
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3718,60 +6332,79 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
+          m_Behaviour:
+            Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
+            Enabled: 0
+            Foldout: 0
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          AccessType: 0
+          m_TargetTag: 
+          m_TargetName: 
+          m_Type: 0
+          m_IsPrefab: 0
           TargetMoveComplete: 0
           OffsetDistanceMax: 100
-        Enabled: 0
       m_Horde:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         m_Target:
-          AccessType: 0
-          m_TargetTag: 
-          m_TargetName: 
-          m_TargetGameObject: {fileID: 0}
-          Influences:
-            Foldout: 0
-            Enabled: 0
-            Interval: 0
-            Damage: 0
-            Stress: 0
-            Debility: 0
-            Hunger: 0
-            Thirst: 0
-            Aggressivity: 0
-            Anxiety: 0
-            Experience: 0
-            Nosiness: 0
-            Odour:
-              Enabled: 0
-              Type: 0
-              Intensity: 0
-              IntensityMax: 0
-              Range: 0
-              RangeMax: 0
-              UseMarker: 0
-              UseEffect: 0
-          m_Type: 0
-          ShowInfoText: 0
+          Enabled: 0
+          Foldout: 1
           InfoText: 
+          ShowInfoText: 0
+          m_EntityGameObject: {fileID: 0}
+          m_EntityComponent: {fileID: 0}
           BehaviourModeKey: 
+          m_Events:
+            Enabled: 0
+            Foldout: 0
+            InfoText: 
+            ShowInfoText: 0
+            EnableDebugLog: 0
+            EnableDebugRay: 0
+            m_Events: []
           m_GroupMessage:
+            Enabled: 0
+            Foldout: 0
             Type: 0
             TargetGameObject: {fileID: 0}
             BahaviourKey: 
             Command: 
-            Foldout: 0
-            Enabled: 0
-          LastReceivedGroupMessage:
-            Type: 0
-            TargetGameObject: {fileID: 0}
-            BahaviourKey: 
-            Command: 
-            Foldout: 0
-            Enabled: 0
-          IsPrefab: 0
           m_Selectors:
+            Enabled: 0
             Foldout: 1
-            UseSelectionCriteriaForHome: 0
             UseSelectionRange: 1
             UseSelectionAngle: 1
             UseVisibilityCheck: 0
@@ -3796,7 +6429,7 @@ MonoBehaviour:
             AdvancedOperatorType: 0
             Status: 0
             m_SelectorGroups: []
-            m_Statements: []
+            m_ConditionGroups: []
           m_Move:
             Enabled: 1
             Foldout: 1
@@ -3804,7 +6437,7 @@ MonoBehaviour:
             Offset: {x: 0, y: 0, z: 0}
             LastKnownPosition: {x: 0, y: 0, z: 0}
             RandomRange: 0
-            MaxRandomRange: 250
+            RandomRangeMaximum: 250
             StopDistance: 2
             StopDistanceMaximum: 10
             StopDistanceZoneRestricted: 0
@@ -3825,17 +6458,62 @@ MonoBehaviour:
             MinOffsetDistance: 5
             MaxOffsetDistance: 15
             DynamicOffsetDistanceUpdateSpeed: 0.05
-          Foldout: 1
+          m_Behaviour:
+            Foldout: 0
+            UseAdvancedBehaviour: 0
+            UseSelectiveBehaviour: 0
+            BehaviourModeKey: 
+            BehaviourModeKeyReached: 
+          m_Influences:
+            Enabled: 0
+            Foldout: 0
+            Interval: 0
+            Damage: 0
+            UseDamageInPercent: 0
+            Stress: 0
+            UseStressInPercent: 0
+            Debility: 0
+            UseDebilityInPercent: 0
+            Hunger: 0
+            UseHungerInPercent: 0
+            Thirst: 0
+            UseThirstInPercent: 0
+            Aggressivity: 0
+            Anxiety: 0
+            Experience: 0
+            Nosiness: 0
+            Odour:
+              Enabled: 0
+              Type: 0
+              Intensity: 0
+              IntensityMax: 0
+              Range: 0
+              RangeMax: 0
+              UseMarker: 0
+              UseEffect: 0
+          AccessType: 0
+          m_TargetTag: 
+          m_TargetName: 
+          m_Type: 0
+          m_IsPrefab: 0
           TargetMoveComplete: 0
           OffsetDistanceMax: 100
-        Enabled: 0
     m_Move:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       DefaultBody:
         Type: 1
         UseAdvanced: 0
-        UseLeaningTurn: 0
-        MaxLeanAngle: 58.5
-        LeanAngleMultiplier: 1
+        UseRollAngle: 0
+        MaxRollAngle: 30
+        RollAngleMultiplier: 0.5
+        UsePitch: 0
+        MaxPitchAngle: 30
+        PitchAngleMultiplier: 0.5
         Width: 0
         Length: 0.79999995
         Height: 0
@@ -3848,9 +6526,12 @@ MonoBehaviour:
       CurrentBody:
         Type: 2
         UseAdvanced: 1
-        UseLeaningTurn: 0
-        MaxLeanAngle: 30
-        LeanAngleMultiplier: 0.5
+        UseRollAngle: 0
+        MaxRollAngle: 30
+        RollAngleMultiplier: 0.5
+        UsePitch: 0
+        MaxPitchAngle: 30
+        PitchAngleMultiplier: 0.5
         Width: 1.3028361
         Length: 0.79999995
         Height: 1.937999
@@ -3862,7 +6543,21 @@ MonoBehaviour:
         DefaultHeight: 49.6525
       DefaultMove:
         Enabled: 0
+        Foldout: 0
         Type: 0
+        m_Altitude:
+          Enabled: 0
+          Foldout: 0
+          UseAltitudeAboveGround: 0
+          Min: 0
+          Max: 0
+          Maximum: 1000
+          VerticalSpeed:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
         Detour:
           Position: {x: 0, y: 0, z: 0}
         Orbit:
@@ -3878,13 +6573,18 @@ MonoBehaviour:
         Velocity:
           Type: 0
           Velocity: {x: 0, y: 0, z: 0}
-          VelocityMax: {x: 0, y: 0, z: 0}
+          VelocityMaximum: {x: 0, y: 0, z: 0}
+          AngularVelocity: 0
+          AngularVelocityMaximum: 0
+          AngularVelocityAuto: 0
+          Angular: {x: 0, y: 0, z: 0}
+          AngularMaximum: {x: 0, y: 0, z: 0}
           UseNegativeVelocity: 0
           VelocityMinVariance: 0
           VelocityMaxVariance: 0
           UseTargetVelocity: 0
-          AngularVelocity: 0
-          AngularVelocityAuto: 0
+          UseAdvancedVelocity: 0
+          UseAdvancedAngularVelocity: 0
           Inertia: 0
           UseAutoDrift: 0
           DriftMultiplier: 0
@@ -3901,11 +6601,24 @@ MonoBehaviour:
         MoveDeviationLengthMax: 100
         MoveDeviationVariance: 0
         MoveIgnoreLevelDifference: 1
-        Link: 0
         NextBehaviourModeKey: 
       CurrentMove:
         Enabled: 0
+        Foldout: 0
         Type: 0
+        m_Altitude:
+          Enabled: 0
+          Foldout: 0
+          UseAltitudeAboveGround: 0
+          Min: 0
+          Max: 0
+          Maximum: 1000
+          VerticalSpeed:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
         Detour:
           Position: {x: 0, y: 0, z: 0}
         Orbit:
@@ -3921,13 +6634,18 @@ MonoBehaviour:
         Velocity:
           Type: 0
           Velocity: {x: 0, y: 0, z: 0}
-          VelocityMax: {x: 0, y: 0, z: 0}
+          VelocityMaximum: {x: 0, y: 0, z: 0}
+          AngularVelocity: 0
+          AngularVelocityMaximum: 0
+          AngularVelocityAuto: 0
+          Angular: {x: 0, y: 0, z: 0}
+          AngularMaximum: {x: 0, y: 0, z: 0}
           UseNegativeVelocity: 0
           VelocityMinVariance: 0
           VelocityMaxVariance: 0
           UseTargetVelocity: 0
-          AngularVelocity: 0
-          AngularVelocityAuto: 0
+          UseAdvancedVelocity: 0
+          UseAdvancedAngularVelocity: 0
           Inertia: 0
           UseAutoDrift: 0
           DriftMultiplier: 0
@@ -3944,53 +6662,103 @@ MonoBehaviour:
         MoveDeviationLengthMax: 0
         MoveDeviationVariance: 0
         MoveIgnoreLevelDifference: 0
-        Link: 0
         NextBehaviourModeKey: 
-      UseDeadlockHandling: 1
-      AvoidWater: 0
-      UseSlopeLimits: 0
-      MaxWalkableSlopeAngle: 35
-      MaxSlopeAngle: 45
+      m_Deadlock:
+        Enabled: 0
+        Foldout: 0
+        Action: 0
+        Behaviour: 
+        MinMoveDistance: 0.25
+        MoveInterval: 2
+        MoveMaxCriticalPositions: 10
+        LoopRange: 2
+        LoopInterval: 5
+        LoopMaxCriticalPositions: 10
+      m_OverlapPrevention:
+        Enabled: 0
+        Foldout: 0
+        OverlapPreventionType: 2
+        StopOnCollision: 0
+        OverlapCube: {x: 1, y: 1, z: 1}
+        OverlapCenter: {x: 0, y: 0, z: 0}
+        OverlapRadius: 5
+        OverlapRadiusMaximum: 25
+        EscapeSpeed: 5
+        EscapeSpeedMaximum: 10
+        UseDynamicOverlapPreventionSpeed: 1
+        AllowRotationChanges: 0
+      m_GroundAvoidance:
+        Enabled: 0
+        Foldout: 0
+        AvoidWater: 0
+        UseSlopeLimits: 0
+        ScanningRange: 5
+        ScanningRangeMaximum: 10
+        ScanningAngle: 10
+        MaxWalkableSlopeAngle: 35
+        MaxSlopeAngle: 45
+      m_ObstacleAvoidance:
+        Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
+        ScanningAngle: 10
+        ScanningRange: 15
+        CheckDistanceMax: 50
+        UseFixDirection: 1
+      MotionControl: 1
       UseInternalGravity: 1
       UseWorldGravity: 1
       m_Gravity: 9.8
-      MotionControl: 1
-      NavMeshForced: 0
-      m_NavMeshPathPendingCounter: 0
-      GroundCheck: 1
-      GroundCheckBaseOffset: 0
+      FallVelocityMax: 250
+      FallVelocityMaximum: 300
+      CustomGroundLevel: 0
+      GroundLevelVariance: 0.5
       VerticalRaycastOffset: 1
-      VerticalRaycastOffsetMax: 50
-      ObstacleCheck: 0
-      FieldOfView: 80
-      VisualRange: 0
-      MaxVisualRange: 100
-      m_VisualSensorPosition: {x: 0, y: 1.6, z: 0.15}
-      UseDynamicVisualSensorPosition: 1
-      VisualSensorName: Bip001
-      VisualSensorOffset: 0.14999999
-      m_GroundLayers:
-      - Terrain
-      - Default
-      m_ObstacleLayers:
-      - Obstacle
-      DeadlockAction: 0
-      DeadlockBehaviour: IDLE
-      DeadlockMinMoveDistance: 0.25
-      DeadlockMoveInterval: 2
-      DeadlockMoveMaxCriticalPositions: 10
-      DeadlockLoopRange: 2
-      DeadlockLoopInterval: 5
-      DeadlockLoopMaxCriticalPositions: 10
-      ObstacleAvoidanceCheckCycles: 10
-      ObstacleAvoidanceCheckAngle: 90
-      ObstacleAvoidanceScanningAngle: 10
-      ObstacleAvoidanceScanningRange: 15
-      ObstacleAvoidanceCheckDistanceMax: 50
-    m_Environment:
-      m_Collision:
-        Foldout: 1
+      VerticalRaycastOffsetMaximum: 50
+      GroundCheck: 1
+      m_GroundLayer:
         Enabled: 0
+        Foldout: 0
+        DefaultLayerMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        UseDefaultLayer: 0
+        m_Layers: []
+      WaterCheck: 0
+      m_WaterLayer:
+        Enabled: 0
+        Foldout: 0
+        DefaultLayerMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        UseDefaultLayer: 0
+        m_Layers: []
+      ObstacleCheck: 0
+      m_ObstacleLayer:
+        Enabled: 0
+        Foldout: 0
+        DefaultLayerMask:
+          serializedVersion: 2
+          m_Bits: 4294967295
+        UseDefaultLayer: 0
+        m_Layers: []
+    m_Environment:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      m_Collision:
+        Enabled: 0
+        Foldout: 1
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         UseCollider: 1
         UseTrigger: 0
         UseCharacterController: 0
@@ -3998,8 +6766,38 @@ MonoBehaviour:
         Collisions: []
       m_Surface:
         Enabled: 0
+        Foldout: 0
+        InfoText: 
+        ShowInfoText: 0
+        EnableDebugLog: 0
+        EnableDebugRay: 0
         Interval: 1
         Surfaces: []
+        m_Audio:
+          Enabled: 0
+          Foldout: 0
+          InfoText: 
+          ShowInfoText: 0
+          EnableDebugLog: 0
+          EnableDebugRay: 0
+          m_TimerEnabled: 1
+          TimerFoldout: 0
+          UseInterval: 0
+          UseEnd: 0
+          InitialImpulsTime: 0
+          InitialImpulsTimeMaximum: 60
+          ImpulseLimitMin: 0
+          ImpulseLimitMax: 0
+          ImpulseLimitMaximum: 5
+          ImpulseIntervalMin: 0
+          ImpulseIntervalMax: 0
+          ImpulseIntervalMaximum: 5
+          ImpulseSequenceLimitMin: 0
+          ImpulseSequenceLimitMax: 0
+          ImpulseSequenceLimitMaximum: 10
+          ImpulseSequenceBreakLengthMin: 0
+          ImpulseSequenceBreakLengthMax: 0
+          ImpulseSequenceBreakLengthMaximum: 10
         ScanInterval: 1
     m_TargetChanged: 0
     m_IsVisible: 0
@@ -4014,10 +6812,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7049e2900a9e6439eb4833aee56f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  GroundedInEditorMode: 0
+  UseCustomGizmoColor: 0
+  CustomGizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  GizmoSize: 0.25
+  DrawSelectedOnly: 0
   m_CreatureDebug:
-    DebugLogEnabled: 0
-    GroundedInEditorMode: 1
-    DrawSelectedOnly: 1
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
     m_MovePointer:
       m_Enabled: 0
       PointerColor: {r: 0, g: 0, b: 1, a: 1}
@@ -4029,10 +6842,15 @@ MonoBehaviour:
       m_PointerType: 0
       PointerSize: {x: 0.5, y: 0.5, z: 0.5}
     m_Gizmos:
+      Enabled: 1
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
       ShowPath: 1
       PathPositionsLimit: 1000
       PathPrecision: 0.5
-      Enabled: 1
       ShowText: 1
       Level: 0
       UseObjectLevel: 1
@@ -4078,17 +6896,20 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 34604f31e7357c640bccb727ace0f411, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4098,6 +6919,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300004, guid: b7e10e6faa72e074888c402c5a76cf81, type: 3}
   m_Bones:
   - {fileID: 411408}
@@ -4116,17 +6938,20 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: ac9e81b9fcc2206488e4a6af9aafa8fa, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4136,6 +6961,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: b7e10e6faa72e074888c402c5a76cf81, type: 3}
   m_Bones:
   - {fileID: 411408}
@@ -4174,17 +7000,20 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 34604f31e7357c640bccb727ace0f411, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4194,6 +7023,7 @@ SkinnedMeshRenderer:
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300002, guid: b7e10e6faa72e074888c402c5a76cf81, type: 3}
   m_Bones:
   - {fileID: 411408}
