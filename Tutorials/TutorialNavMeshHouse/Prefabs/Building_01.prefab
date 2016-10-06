@@ -1243,12 +1243,11 @@ GameObject:
   - 4: {fileID: 431954}
   - 33: {fileID: 3394264}
   - 23: {fileID: 2343072}
-  - 114: {fileID: 11428870}
   - 95: {fileID: 9578790}
   - 65: {fileID: 6528904}
   - 65: {fileID: 6578180}
   - 208: {fileID: 20824226}
-  - 114: {fileID: 11453140}
+  - 114: {fileID: 114000012027597776}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1780,12 +1779,11 @@ GameObject:
   - 4: {fileID: 497338}
   - 33: {fileID: 3385456}
   - 23: {fileID: 2373708}
-  - 114: {fileID: 11471630}
   - 95: {fileID: 9536542}
   - 65: {fileID: 6569108}
   - 65: {fileID: 6540728}
   - 208: {fileID: 20813784}
-  - 114: {fileID: 11401260}
+  - 114: {fileID: 114000014223292726}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1981,12 +1979,11 @@ GameObject:
   - 4: {fileID: 415446}
   - 33: {fileID: 3364340}
   - 23: {fileID: 2377140}
-  - 114: {fileID: 11499342}
   - 95: {fileID: 9562340}
   - 65: {fileID: 6568194}
   - 65: {fileID: 6534972}
   - 208: {fileID: 20800812}
-  - 114: {fileID: 11458862}
+  - 114: {fileID: 114000011706012686}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3027,12 +3024,11 @@ GameObject:
   - 4: {fileID: 478524}
   - 33: {fileID: 3360168}
   - 23: {fileID: 2322532}
-  - 114: {fileID: 11454322}
   - 95: {fileID: 9578416}
   - 65: {fileID: 6540400}
   - 65: {fileID: 6502862}
   - 208: {fileID: 20808708}
-  - 114: {fileID: 11450014}
+  - 114: {fileID: 114000010008873290}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3118,12 +3114,11 @@ GameObject:
   - 4: {fileID: 475580}
   - 33: {fileID: 3370270}
   - 23: {fileID: 2324118}
-  - 114: {fileID: 11464664}
   - 95: {fileID: 9561494}
   - 65: {fileID: 6520036}
   - 65: {fileID: 6589186}
   - 208: {fileID: 20851034}
-  - 114: {fileID: 11486712}
+  - 114: {fileID: 114000013017890542}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -4448,12 +4443,11 @@ GameObject:
   - 4: {fileID: 477370}
   - 33: {fileID: 3339996}
   - 23: {fileID: 2356120}
-  - 114: {fileID: 11455814}
   - 95: {fileID: 9500206}
   - 65: {fileID: 6508384}
   - 65: {fileID: 6551820}
   - 208: {fileID: 20863602}
-  - 114: {fileID: 11425416}
+  - 114: {fileID: 114000011693152668}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -4559,12 +4553,11 @@ GameObject:
   - 4: {fileID: 459216}
   - 33: {fileID: 3302062}
   - 23: {fileID: 2362748}
-  - 114: {fileID: 11479432}
   - 95: {fileID: 9583906}
   - 65: {fileID: 6587802}
   - 65: {fileID: 6525480}
   - 208: {fileID: 20899356}
-  - 114: {fileID: 11406324}
+  - 114: {fileID: 114000013512436864}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -8599,7 +8592,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalPosition: {x: 72.55606, y: 0.030960083, z: 27.947845}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -21272,28 +21265,6 @@ Light:
   m_BounceIntensity: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &11401260
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11406324
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11417116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21308,60 +21279,6 @@ MonoBehaviour:
   minIntensity: 2.5
   maxIntensity: 4
   fireLight: {fileID: 10877556}
---- !u!114 &11425416
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11428870
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
 --- !u!114 &11429412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21444,308 +21361,6 @@ MonoBehaviour:
     DefaultDropRange: 0.5
     LastCollectedObjectID: 0
     UseDetachOnDie: 0
---- !u!114 &11450014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11453140
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11454322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
---- !u!114 &11455814
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
---- !u!114 &11458862
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11464664
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
---- !u!114 &11471630
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
---- !u!114 &11479432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
---- !u!114 &11486712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11499342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30811937274854248a967df98f342554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableDebugLogs: 0
-  UseDontDestroyOnLoad: 0
-  m_TargetDebug:
-    Enabled: 0
-    DrawSelectedOnly: 0
-    UseCustomGizmoColor: 0
-    CustomGizmoColor:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
-    GizmoSize: 0.25
-  m_Lifespan:
-    Enabled: 0
-    Foldout: 0
-    EnableDebugLog: 0
-    LifespanMin: 0
-    LifespanMax: 0
-    LifespanDefaultMax: 360
-    AgeInSeconds: 0
-  BaseOffset: 0
-  BaseOffsetMaximum: 1
-  GroundedInEditorMode: 0
-  IsOpen: 0
-  IsLocked: 0
-  ClosingDelayTime: 5
-  ClosingDelayMaximum: 30
-  UseFunctionKey: 0
-  DoorFunctionKey: 102
-  UseLockToggleKey: 0
-  DoorLockToggleKey: 108
-  OpenAnimatorParameter: 4f70656e
 --- !u!136 &13682210
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -21765,7 +21380,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125038}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -21803,12 +21418,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 0
   looping: 1
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1
+  autoRandomSeed: 1
   scalingMode: 2
+  randomSeed: 0
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -23493,7 +23109,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178656}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -23531,12 +23147,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 0
   looping: 1
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1
+  autoRandomSeed: 1
   scalingMode: 2
+  randomSeed: 0
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -25246,7 +24863,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198858}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -25284,12 +24901,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 0
   looping: 1
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1
+  autoRandomSeed: 1
   scalingMode: 2
+  randomSeed: 0
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -27301,3 +26919,444 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172666}
   m_IsPrefabParent: 1
+--- !u!114 &114000010008873290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 1
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000011693152668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000011706012686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000012027597776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000013017890542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000013512436864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open
+--- !u!114 &114000014223292726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cd8413378d9bf469ee774419ee27ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDebug: 0
+  UseDebugLogs: 0
+  UseDebugActiveOnly: 0
+  UseDebugRays: 0
+  UseDontDestroyOnLoad: 0
+  m_Status:
+    Enabled: 0
+    Foldout: 0
+    InfoText: 
+    ShowInfoText: 0
+    EnableDebugLog: 0
+    EnableDebugRay: 0
+    LifespanMin: 0
+    LifespanMax: 0
+    LifespanDefaultMax: 360
+    UseAging: 0
+    MaxAge: 60
+    MaxAgeMaximum: 3600
+    UseLifespan: 0
+    m_Corpse:
+      Enabled: 0
+      Foldout: 0
+      InfoText: 
+      ShowInfoText: 0
+      EnableDebugLog: 0
+      EnableDebugRay: 0
+      CorpseReferencePrefab: {fileID: 0}
+      CorpseRemovingDelay: 20
+      CorpseRemovingDelayMaximum: 20
+      CorpseRemovingDelayVariance: 0.25
+      UseCorpseScaling: 0
+    IsDestructible: 1
+    InitialDurabilityMin: 100
+    InitialDurabilityMax: 100
+    InitialDurabilityMaximum: 100
+  m_Message:
+    Enabled: 0
+    Foldout: 0
+    LastGroupCommand: 
+  UseRuntimeName: 0
+  RuntimeName: 
+  BaseOffset: 0
+  BaseOffsetMaximum: 1
+  IsOpen: 0
+  IsLocked: 0
+  ClosingDelayTime: 5
+  ClosingDelayMaximum: 30
+  UseFunctionKey: 0
+  DoorFunctionKey: 102
+  UseLockToggleKey: 0
+  DoorLockToggleKey: 108
+  OpenAnimatorParameter: Open

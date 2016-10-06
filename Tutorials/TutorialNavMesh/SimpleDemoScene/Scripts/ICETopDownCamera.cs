@@ -26,7 +26,7 @@ namespace ICE.Shared
 		void Update () {
 			//transform.LookAt( Target.transform );
 
-			//transform.rotation = Quaternion.Slerp ( m_Owner.transform.rotation, tmp_destination_rotation, behaviour.MoveAngularVelocity.y * Time.deltaTime );
+			//transform.rotation = Quaternion.Slerp ( Owner.transform.rotation, tmp_destination_rotation, behaviour.MoveAngularVelocity.y * Time.deltaTime );
 			//transform.position += Target.transform.TransformDirection( - Vector3.forward ) * 10 * Time.deltaTime;
 
 			if (Input.GetKey(KeyCode.Q))

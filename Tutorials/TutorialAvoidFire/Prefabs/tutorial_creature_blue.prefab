@@ -200,11 +200,11 @@ MonoBehaviour:
     m_ShowHelp: 0
     m_ShowDebug: 1
     m_ShowInfo: 0
-    m_ShowEssentials: 1
+    m_ShowEssentials: 0
     m_ShowEnvironment: 0
     m_ShowStatus: 0
     m_ShowMissions: 0
-    m_ShowInteraction: 0
+    m_ShowInteraction: 1
     m_ShowBehaviour: 0
     m_FoldoutEssentials: 1
     m_FoldoutEssentialsHome: 1
@@ -524,7 +524,7 @@ MonoBehaviour:
           Enabled: 1
           Foldout: 1
           UseSelectionRange: 1
-          UseSelectionAngle: 1
+          UseSelectionAngle: 0
           UseVisibilityCheck: 1
           UseAudibleCheck: 0
           UseOdourCheck: 0
@@ -641,6 +641,8 @@ MonoBehaviour:
       BehaviourModeSpawnEnabled: 0
       BehaviourModeDead: DEAD
       BehaviourModeDeadEnabled: 0
+      BehaviourModeMounted: 
+      BehaviourModeMountedEnabled: 0
       BehaviourModeJump: JUMP
       BehaviourModeJumpEnabled: 0
       BehaviourModeFall: 
@@ -6487,10 +6489,10 @@ MonoBehaviour:
         RulesOrderType: 0
         RulesOrderInverse: 0
         m_Favoured:
-          Enabled: 0
-          Foldout: 0
-          MinRuntime: 0
-          MaxRuntime: 0
+          Enabled: 1
+          Foldout: 1
+          MinRuntime: 1.2999998
+          MaxRuntime: 3.478261
           MaxRuntimeMaximum: 60
           FavouredPriority: 0
           FavouredUntilNextMovePositionReached: 0
