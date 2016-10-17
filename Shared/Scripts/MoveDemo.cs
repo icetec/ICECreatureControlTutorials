@@ -40,6 +40,17 @@ namespace ICE.Creatures.Demo
 
 		public GameObject NPC1;
 
+		public void ExampleDefault()
+		{
+			MoveSegmentLength.value = 0;
+			MoveSegmentVariance.value = 0;
+			MoveDeviationLength.value = 0;
+			MoveDeviationVariance.value = 0;
+			MoveStopDistance.value = 2;
+			ForwardSpeed.value = 7;
+			TurnSpeed.value = 3;
+		}
+
 		public void ExampleStraightFast()
 		{
 			MoveSegmentLength.value = 0;
@@ -203,10 +214,16 @@ namespace ICE.Creatures.Demo
 					_controller_debug_01.CreatureDebug.MovePointer.PointerSize = new Vector3( _stop_distance,0.25f,_stop_distance );
 				}
 
-				if( _controller_debug_01.CreatureDebug.TargetPositionPointer.Pointer != null )
+				if( _controller_debug_01.CreatureDebug.TargetMovePositionPointer.Pointer != null )
 				{
 					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
-					_controller_debug_01.CreatureDebug.TargetPositionPointer.PointerSize = new Vector3( _stop_distance,0.25f,_stop_distance );
+					_controller_debug_01.CreatureDebug.TargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.25f,_stop_distance );
+				}
+
+				if( _controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.Pointer != null )
+				{
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					_controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 			}
 

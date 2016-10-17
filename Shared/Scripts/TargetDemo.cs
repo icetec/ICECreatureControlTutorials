@@ -17,6 +17,7 @@ namespace ICE.Creatures.Demo
 		public Slider OffsetDistance;
 		public Slider OffsetAngle;
 		public Slider TargetStopDistance;
+		public Slider TargetSmoothingMultiplier;
 
 		public Toggle UseDynamicOffsetDistance;
 		public Toggle UseRandomOffsetDistance;
@@ -25,6 +26,7 @@ namespace ICE.Creatures.Demo
 
 		public Toggle UpdateOnActivate;
 		public Toggle UpdateOnReached;
+		public Toggle TargetStopDistanceBan;
 
 		public Toggle UseNPC2AsTarget;
 
@@ -35,6 +37,7 @@ namespace ICE.Creatures.Demo
 		public Text TextOffsetDistance;
 		public Text TextOffsetAngle;
 		public Text TextTargetStopDistance;
+		public Text TextTargetSmoothingMultiplier;
 		
 		public Text TextForwardSpeed;
 		public Text TextTurnSpeed;
@@ -85,8 +88,10 @@ namespace ICE.Creatures.Demo
 
 				_controller_01.Creature.ActiveTarget.Move.UseUpdateOffsetOnActivateTarget = UpdateOnActivate.isOn;
 				_controller_01.Creature.ActiveTarget.Move.UseUpdateOffsetOnMovePositionReached = UpdateOnReached.isOn;
+				if( TargetStopDistanceBan != null ) _controller_01.Creature.ActiveTarget.Move.StopDistanceZoneRestricted = TargetStopDistanceBan.isOn;
 
 				_controller_01.Creature.ActiveTarget.Move.StopDistance = TargetStopDistance.value;
+				if( TargetSmoothingMultiplier != null ) _controller_01.Creature.ActiveTarget.Move.SmoothingSpeed = TargetSmoothingMultiplier.value;
 				_controller_01.Creature.ActiveTarget.UpdateOffset( OffsetAngle.value , OffsetDistance.value );
 
 				if( _controller_01.Creature.Move.CurrentBehaviourModeRule != null ) 
@@ -97,6 +102,7 @@ namespace ICE.Creatures.Demo
 
 				TextTargetRandomRange.text = TargetRandomRange.value.ToString();
 				TextTargetStopDistance.text = TargetStopDistance.value.ToString();
+				if( TargetSmoothingMultiplier != null ) TextTargetSmoothingMultiplier.text = TargetSmoothingMultiplier.value.ToString();
 				TextOffsetAngle.text = ((int)OffsetAngle.value ).ToString() + "°";
 				TextOffsetDistance.text = ((int)OffsetDistance.value ).ToString() + "m";			
 				TextForwardSpeed.text = ForwardSpeed.value.ToString();
@@ -119,10 +125,16 @@ namespace ICE.Creatures.Demo
 					_controller_debug_01.CreatureDebug.MovePointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 
-				if( _controller_debug_01.CreatureDebug.TargetPositionPointer.Pointer != null )
+				if( _controller_debug_01.CreatureDebug.TargetMovePositionPointer.Pointer != null )
 				{
 					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
-					_controller_debug_01.CreatureDebug.TargetPositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
+					_controller_debug_01.CreatureDebug.TargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
+				}
+
+				if( _controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.Pointer != null )
+				{
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					_controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 			}
 
