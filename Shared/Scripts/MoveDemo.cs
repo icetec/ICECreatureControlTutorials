@@ -176,11 +176,11 @@ namespace ICE.Creatures.Demo
 			
 			if( _controller_01 != null )
 			{
-				_controller_01.Creature.Move.DefaultMove.MoveSegmentLength = MoveSegmentLength.value;
-				_controller_01.Creature.Move.DefaultMove.MoveSegmentVariance = MoveSegmentVariance.value;
-				_controller_01.Creature.Move.DefaultMove.MoveDeviationLength = MoveDeviationLength.value;
-				_controller_01.Creature.Move.DefaultMove.MoveDeviationVariance = MoveDeviationVariance.value;
-				_controller_01.Creature.Move.DefaultMove.MoveStopDistance = MoveStopDistance.value;
+				_controller_01.Creature.Move.DefaultMove.SegmentLength = MoveSegmentLength.value;
+				_controller_01.Creature.Move.DefaultMove.SegmentVariance = MoveSegmentVariance.value;
+				_controller_01.Creature.Move.DefaultMove.DeviationLength = MoveDeviationLength.value;
+				_controller_01.Creature.Move.DefaultMove.DeviationVariance = MoveDeviationVariance.value;
+				_controller_01.Creature.Move.DefaultMove.StoppingDistance = MoveStopDistance.value;
 
 				if( _controller_01.Creature.Move.CurrentBehaviourModeRule != null ) 
 				{
@@ -210,7 +210,7 @@ namespace ICE.Creatures.Demo
 			{
 				if( _controller_debug_01.CreatureDebug.MovePointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.Move.CurrentMove.MoveStopDistance;
+					float _stop_distance = _controller_01.Creature.Move.CurrentMove.StoppingDistance;
 					_controller_debug_01.CreatureDebug.MovePointer.PointerSize = new Vector3( _stop_distance,0.25f,_stop_distance );
 				}
 

@@ -121,7 +121,7 @@ namespace ICE.Creatures.Demo
 			{
 				if( _controller_debug_01.CreatureDebug.MovePointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.Move.CurrentMove.MoveStopDistance;
+					float _stop_distance = _controller_01.Creature.Move.CurrentMove.StoppingDistance;
 					_controller_debug_01.CreatureDebug.MovePointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 
