@@ -165,6 +165,14 @@ namespace ICE.Creatures.Demo
 					else if( ! UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != TargetObject )
 						_controller_01.Creature.Essentials.Target.SetTargetByName( TargetObject.name, _controller_01.gameObject );
 				}
+				/*
+				else if( _controller_01.Creature.Essentials.Target.AccessType == TargetAccessType.TYPE )
+				{
+					if( UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != NPC2 )
+						_controller_01.Creature.Essentials.Target.SetTargetByName( NPC2.name, _controller_01.gameObject );
+					else if( ! UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != TargetObject )
+						_controller_01.Creature.Essentials.Target.SetTargetByName( TargetObject.name, _controller_01.gameObject );
+				}*/
 				else
 				{
 					if( UseNPC2AsTarget.isOn && _controller_01.Creature.Essentials.Target.TargetGameObject != NPC2 )
