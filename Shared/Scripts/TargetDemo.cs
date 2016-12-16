@@ -79,20 +79,20 @@ namespace ICE.Creatures.Demo
 				_controller_01.Creature.ActiveTarget.Move.UseRandomOffsetAngle = UseRandomOffsetAngle.isOn;
 
 				if( _controller_01.Creature.ActiveTarget.Move.UseDynamicOffsetDistance || _controller_01.Creature.ActiveTarget.Move.UseRandomOffsetDistance )
-					OffsetDistance.value = _controller_01.Creature.ActiveTarget.OffsetDistance;
+					OffsetDistance.value = _controller_01.Creature.ActiveTarget.Move.OffsetDistance;
 
 				if( _controller_01.Creature.ActiveTarget.Move.UseDynamicOffsetAngle || _controller_01.Creature.ActiveTarget.Move.UseRandomOffsetAngle )
-					OffsetAngle.value = _controller_01.Creature.ActiveTarget.OffsetAngle;
+					OffsetAngle.value = _controller_01.Creature.ActiveTarget.Move.OffsetAngle;
 
 				_controller_01.Creature.ActiveTarget.Move.RandomRange = TargetRandomRange.value;
 
 				_controller_01.Creature.ActiveTarget.Move.UseUpdateOffsetOnActivateTarget = UpdateOnActivate.isOn;
 				_controller_01.Creature.ActiveTarget.Move.UseUpdateOffsetOnMovePositionReached = UpdateOnReached.isOn;
-				if( TargetStopDistanceBan != null ) _controller_01.Creature.ActiveTarget.Move.StopDistanceZoneRestricted = TargetStopDistanceBan.isOn;
+				if( TargetStopDistanceBan != null ) _controller_01.Creature.ActiveTarget.Move.StoppingDistanceZoneRestricted = TargetStopDistanceBan.isOn;
 
-				_controller_01.Creature.ActiveTarget.Move.StopDistance = TargetStopDistance.value;
+				_controller_01.Creature.ActiveTarget.Move.StoppingDistance = TargetStopDistance.value;
 				if( TargetSmoothingMultiplier != null ) _controller_01.Creature.ActiveTarget.Move.SmoothingSpeed = TargetSmoothingMultiplier.value;
-				_controller_01.Creature.ActiveTarget.UpdateOffset( OffsetAngle.value , OffsetDistance.value );
+				_controller_01.Creature.ActiveTarget.Move.UpdateOffset( OffsetAngle.value , OffsetDistance.value );
 
 				if( _controller_01.Creature.Move.CurrentBehaviourModeRule != null ) 
 				{
@@ -127,13 +127,13 @@ namespace ICE.Creatures.Demo
 
 				if( _controller_debug_01.CreatureDebug.TargetMovePositionPointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StoppingDistance;
 					_controller_debug_01.CreatureDebug.TargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 
 				if( _controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StoppingDistance;
 					_controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 			}

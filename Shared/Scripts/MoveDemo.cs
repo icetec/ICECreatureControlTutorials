@@ -216,13 +216,13 @@ namespace ICE.Creatures.Demo
 
 				if( _controller_debug_01.CreatureDebug.TargetMovePositionPointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StoppingDistance;
 					_controller_debug_01.CreatureDebug.TargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.25f,_stop_distance );
 				}
 
 				if( _controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.Pointer != null )
 				{
-					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StopDistance;
+					float _stop_distance = _controller_01.Creature.ActiveTarget.Move.StoppingDistance;
 					_controller_debug_01.CreatureDebug.DesiredTargetMovePositionPointer.PointerSize = new Vector3( _stop_distance,0.025f,_stop_distance );
 				}
 			}
