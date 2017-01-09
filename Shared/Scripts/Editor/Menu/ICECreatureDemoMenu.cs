@@ -1,7 +1,7 @@
 // ##############################################################################
 //
 // ICECreatureDemoMenu.cs
-// Version 1.3.5
+// Version 1.3.6
 //
 // Copyrights © Pit Vetterick, ICE Technologies Consulting LTD. All Rights Reserved.
 // http://www.icecreaturecontrol.com
@@ -13,9 +13,11 @@
 // ##############################################################################
 
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 using ICE;
+using ICE.World;
 using ICE.World.EditorUtilities;
 
 using ICE.Creatures;
@@ -46,7 +48,7 @@ namespace ICE.Creatures.Menus
 			#endif
 		}
 
-		[MenuItem ( "ICE/ICE Creature Control/Demos/Assign Demo Layer", false, 9300 )]
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Assign Demo Layer", false, 1966 )]
 		static void AssignDemoLayer() 
 		{
 			if( ! Application.isPlaying )
@@ -58,46 +60,83 @@ namespace ICE.Creatures.Menus
 					ICE.World.EditorUtilities.EditorTools.AddLayer( "Obstacle" );
 			}
 		}
-		/*
-		// ATTRIBUTES
-		[MenuItem ( "ICE/ICE Creature Control/Demos/Attributes/Add Target Attribute", false, 1300 )]
-		static void AddTargetAttribute() 
+
+		// BASICS
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Static Targets' Tutorial", false, 19771 )]
+		static void TutorialStaticTarget(){
+			LoadDemo( "TutorialStaticTarget" );
+		}
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Moveable Targets' Tutorial", false, 19772 )]
+		static void TutorialMoveableTarget(){
+			LoadDemo( "TutorialMoveableTarget" );
+		}
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Move Examples' Tutorial", false, 19773 )]
+		static void TutorialMoveExamples(){
+			LoadDemo( "TutorialMoveExamples" );
+		}
+
+		// BASICS PLUS
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Avoid Fire' Tutorial", false, 19781 )]
+		static void TutorialAvoidFire(){
+			LoadDemo( "TutorialAvoidFire" );
+		}
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Gatherers' Tutorial", false, 19782 )]
+		static void TutorialGatherers(){
+			LoadDemo( "TutorialGatherers" );
+		}
+
+		// MECHANIM
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Mecanim Locomotion' Tutorial", false, 19790 )]
+		static void TutorialMecanimLocomotion(){
+			LoadDemo( "TutorialMecanimLocomotion" );
+		}
+
+		// PATHFINDING
+
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Avoidance' Tutorial", false, 19791 )]
+		static void TutorialAvoidance(){
+			LoadDemo( "TutorialAvoidance" );
+		}
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Navigation Mesh' Tutorial", false, 19792 )]
+		static void TutorialNavMesh(){
+			LoadDemo( "TutorialNavMesh" );
+		}
+
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'NavMesh House' Tutorial", false, 19793 )]
+		static void TutorialNavMeshHouse(){
+			LoadDemo( "TutorialNavMeshHouse" );
+		}
+
+
+		[MenuItem ( "ICE/ICE Creature Control/Demos/Open 'Deathmatch' Tutorial", false, 19794 )]
+		static void TutorialDeathmatch(){
+			LoadDemo( "TutorialDeathmatch" );
+		}
+
+		private static void LoadDemo( string _scene ) 
 		{
-			GameObject _object = Selection.activeObject as GameObject;
+			string _path = "Assets/ICE/ICECreatureControlTutorials/Tutorials/" + _scene + "/" + _scene + ".unity";
 
-			if( _object != null && _object.GetComponent<ICECreatureTargetAttribute>() == null )
-				_object.AddComponent<ICECreatureTargetAttribute>();
+			ICEDebug.LogInfo( "Open Tutorial Scene : " + _path );
+
+			#if UNITY_5_3
+				EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+				EditorSceneManager.OpenScene( _path );
+			#else
+				EditorApplication.OpenScene( _path );
+			#endif
+		
+
+
 		}
-
-		[MenuItem ( "ICE/ICE Creature Control/Components/Attributes/Add Target Attribute", true)]
-		static bool ValidateTargetAttribute(){
-			return ValidateAttributeObject();
-		}
-
-		[MenuItem ( "ICE/ICE Creature Control/Components/Attributes/Add Odour Attribute", false, 1300 )]
-		static void AddOdourAttribute() 
-		{
-			GameObject _object = Selection.activeObject as GameObject;
-
-			if( _object != null && _object.GetComponent<ICECreatureOdourAttribute>() == null )
-				_object.AddComponent<ICECreatureOdourAttribute>();
-		}
-
-		[MenuItem ( "ICE/ICE Creature Control/Components/Attributes/Add Odour Attribute", true)]
-		static bool ValidateOdourAttribute(){
-			return ValidateAttributeObject();
-		}
-
-		static bool ValidateAttributeObject() 
-		{
-			GameObject _obj = Selection.activeObject as GameObject;
-
-			if( _obj != null && 
-				_obj.GetComponent<ICECreatureControl>() == null && 
-				_obj.GetComponent<ICECreatureRegister>() == null )
-				return true;
-			else
-				return false;
-		}*/
 	}
 }
