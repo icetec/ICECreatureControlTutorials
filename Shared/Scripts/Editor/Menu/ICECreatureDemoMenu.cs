@@ -1,7 +1,7 @@
 // ##############################################################################
 //
 // ICECreatureDemoMenu.cs
-// Version 1.3.6
+// Version 1.3.7
 //
 // Copyrights © Pit Vetterick, ICE Technologies Consulting LTD. All Rights Reserved.
 // http://www.icecreaturecontrol.com
@@ -13,8 +13,11 @@
 // ##############################################################################
 
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+#if UNITY_5_3 || UNITY_5_3_OR_NEWER
+using UnityEditor.SceneManagement;
+#endif
+
 
 using ICE;
 using ICE.World;
@@ -128,7 +131,7 @@ namespace ICE.Creatures.Menus
 
 			ICEDebug.LogInfo( "Open Tutorial Scene : " + _path );
 
-			#if UNITY_5_3
+			#if UNITY_5_3 || UNITY_5_3_OR_NEWER
 				EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
 				EditorSceneManager.OpenScene( _path );
 			#else
